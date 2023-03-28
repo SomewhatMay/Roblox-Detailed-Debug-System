@@ -81,7 +81,7 @@ Returns:
 ### `debugHandler.GetError(sourceScript: Script, TopLevelTracebackMode: TracebackMode?) -> function(...)`
 Returns a function that prints an error message to the console with optional traceback information.
 
-####Arguments:
+#### Arguments:
 * `sourceScript: Script` (required): The script that the message originates from.
 * `TopLevelTracebackMode: TracebackMode` (optional): The level of traceback information to display. Valid values are `TracebackMode.Enabled`, `TracebackMode.EnabledOpen`, `TracebackMode.Disabled`, and `TracebackMode.Code`. Defaults to `TracebackMode.Enabled` if not specified.
 
