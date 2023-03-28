@@ -63,6 +63,7 @@ Returns a function that prints an output message to the console with optional tr
 ####  Arguments:
 * `sourceScript: Script` (required): The script that the message originates from.
 * `TopLevelTracebackMode: TracebackMode` (optional): The level of traceback information to display. Valid values are `TracebackMode.Enabled`, `TracebackMode.EnabledOpen`, `TracebackMode.Disabled`, and `TracebackMode.Code`. Defaults to `TracebackMode.Enabled` if not specified.
+
 Returns:
 `function(...: string)`: A function that takes a message string and any additional arguments, and prints an output message to the console with optional traceback information.
 
@@ -73,6 +74,7 @@ Returns a function that prints a warning message to the console with optional tr
 * `sourceScript: Script` (required): The script that the message originates from.
 * `TopLevelTracebackMode: TracebackMode` (optional): The level of traceback information to display. Valid values are `TracebackMode.Enabled`, 
 * `TracebackMode.EnabledOpen`, `TracebackMode.Disabled`, and `TracebackMode.Code`. Defaults to `TracebackMode.Enabled` if not specified.
+
 Returns:
 `function(...: string)`: A function that takes a message string and any additional arguments, and prints a warning message to the console with optional traceback information.
 
@@ -82,6 +84,7 @@ Returns a function that prints an error message to the console with optional tra
 ####Arguments:
 * `sourceScript: Script` (required): The script that the message originates from.
 * `TopLevelTracebackMode: TracebackMode` (optional): The level of traceback information to display. Valid values are `TracebackMode.Enabled`, `TracebackMode.EnabledOpen`, `TracebackMode.Disabled`, and `TracebackMode.Code`. Defaults to `TracebackMode.Enabled` if not specified.
+
 Returns:
 `function(...: string)`: A function that takes a message string and any additional arguments, and prints an error message to the console with optional traceback information.
 
