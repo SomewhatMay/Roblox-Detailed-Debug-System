@@ -67,20 +67,20 @@ function debugHandler.debug(sourceScript: Script, messageType: string, traceback
 end
 
 function debugHandler.GetPrint(sourceScript: Script, TopLevelTracebackMode: TracebackMode?)
-    return function(overrideTracebackMode: TracebackMode?, ...: string)
-        return debugHandler.debug(sourceScript, MessageType.Output, overrideTracebackMode or TopLevelTracebackMode, ...)
+    return function(...: string)
+        return debugHandler.debug(sourceScript, MessageType.Output, TopLevelTracebackMode, ...)
     end
 end
 
 function debugHandler.GetWarn(sourceScript: Script, TopLevelTracebackMode: TracebackMode?)
-    return function(overrideTracebackMode: TracebackMode?, ...: string)
-        return debugHandler.debug(sourceScript, MessageType.Warning, overrideTracebackMode or TopLevelTracebackMode, ...)
+    return function(...: string)
+        return debugHandler.debug(sourceScript, MessageType.Warning, TopLevelTracebackMode, ...)
     end
 end
 
 function debugHandler.GetError(sourceScript: Script, TopLevelTracebackMode: TracebackMode?)
-    return function(overrideTracebackMode: TracebackMode?, ...: string)
-        return debugHandler.debug(sourceScript, MessageType.Error, overrideTracebackMode or TopLevelTracebackMode, ...)
+    return function(...: string)
+        return debugHandler.debug(sourceScript, MessageType.Error, TopLevelTracebackMode, ...)
     end
 end
 
